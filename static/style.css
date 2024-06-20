@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #9cc4e2; /* fona krāsa */
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  color: #000000; /* virsraksta krāsa */
+  font-family: Sofia;
+  font-size: 39px;
+}
+p {
+  color: #f80d0d; /* paragrāfa krāsa */
+  font-size: 20px;
+}
