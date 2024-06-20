@@ -17,13 +17,21 @@
 
   <main>
     <section id="content">
-    <form>
-      <label for="Vārds">Vārds:</label>
-      <input text="text" id="Vārds" name="Vārds"><br><br>
-      <label for="e_pasts">E-pasts:</label>
-      <input text="e_pasts" id="e_pasts" name="e_pasts"><br><br>
-      <input type="submit" value="Iesniegt">
+      <form>
+        <label for="Vārds">Vārds:</label>
+        <input text="text" id="Vārds" name="Vārds"><br><br>
+        <label for="e_pasts">E-pasts:</label>
+        <input text="e_pasts" id="e_pasts" name="e_pasts"><br><br>
+        <input type="submit" value="Iesniegt">
+      </form>
+
+    <br>
+      
+    <form action="/aiziet" method="post">
+      <input type="text" name="lietotajvards" placeholder="Lietotājvārds" required>
+      <input type="submit">
     </form>
+      
     <br>
       <a href="index.html">Atgriezties</a>
     <br>  
