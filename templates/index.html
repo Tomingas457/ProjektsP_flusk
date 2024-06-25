@@ -18,6 +18,7 @@
       <a href="/" class="active">SĀKUMS</a> 
       <a href="/kontakti" onclick="atjaunotIetvaru(this); return false;"> KONTAKTI</a>
       <a href="/parmums" onclick="atjaunotIetvaru(this); return false;"> PAR MUMS</a>
+      <a href="/pamati_sintakse" onclick="atjaunotIetvaru(this); return false;"> PAMATI UN SINTAKSE</a>
     </nav>
   </header>
   
@@ -32,7 +33,7 @@
 
     <section id="saturs">
       <p>Šis ir mans pirmais HTML!</p>
-      <image src="bilde.jpg" class="img-thumbnail" width="200px">
+      <image src="{{ url_for('static', filename='/media/bilde.jpg') }}" class="img-thumbnail" width="200px">
     </section>
 
     <section id="saturs">
@@ -51,7 +52,7 @@
     <section id="saturs">
       <p>Audio ievietošana</p>
       <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
+        <source src="{{ url_for('static', filename='/media/audio.mp3') }}" type="audio/mpeg">
       Your browser does not support the audio element.
     </section>
     
