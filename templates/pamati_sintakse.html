@@ -6,8 +6,9 @@
     <title>Pamati un sintakse</title>
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
   </head>
+  <h1>Saraksts</h1>
   <body>
-    <nav>
+    <nav class="saraksts">
       <ul>
         <li><a href="/sveiciens">Sveiciens Pasaule</a></li>
         <li><a href="/mainigie">Mainīgie</a></li>
@@ -22,7 +23,7 @@
         <li><a href="/aptauja">Aptauja</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="parbaude">
       {% block content %}{% endblock %}
     </div>
   </body>
