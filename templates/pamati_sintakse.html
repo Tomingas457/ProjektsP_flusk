@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pamati un sintakse</title>
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <h1>Saraksts</h1>
   <body>
-    <nav class="saraksts">
-      <ul>
-        <li><a href="/sveiciens">Sveiciens Pasaule</a></li>
-        <li><a href="/mainigie">Mainīgie</a></li>
-        <li><a href="/datu_tipi">Datu_tipi</a></li>
-        <li><a href="/operatori">Operatori</a></li>
-        <li><a href="/kontroles_strukturas">Kontroles struktūras</a></li>
-        <li><a href="/funkcijas">Funkcijas</a></li>
-        <li><a href="/failu_apstrade">Failu apstrāde</a></li>
-        <li><a href="/moduli">Matemātiskās funkcijas</a></li>
-        <li><a href="/majasdarbs">Mājasdarbs</a></li>
-        <li><a href="/oop">Objektorientēta programmēšana</a></li>
-        <li><a href="/aptauja">Aptauja</a></li>
-      </ul>
-    </nav>
-    <div class="parbaude">
+    <main class="lapassaturs2">
+      <nav class="saraksts">
+        <ul>
+          <li><a href="/sveiciens">Sveiciens Pasaule</a></li>
+          <li><a href="/mainigie">Mainīgie</a></li>
+          <li><a href="/datu_tipi">Datu tipi</a></li>
+          <li><a href="/operatori">Operatori</a></li>
+          <li><a href="/kontroles_strukturas">Kontroles struktūras</a></li>
+          <li><a href="/funkcijas">Funkcijas</a></li>
+          <li><a href="/failu_apstrade">Failu apstrāde</a></li>
+          <li><a href="/moduli">Matemātiskās funkcijas</a></li>
+          <li><a href="/majasdarbs">Mājasdarbs</a></li>
+          <li><a href="/oop">Objektorientēta programmēšana</a></li>
+          <li><a href="/aptauja">Aptauja</a></li>
+        </ul>
+      </nav>
+    <div class="parbaudes">
       {% block content %}{% endblock %}
     </div>
+  </main>
   </body>
 </html>

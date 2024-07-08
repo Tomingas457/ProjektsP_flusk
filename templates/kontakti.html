@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakti</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
 </head>
-
+  
 <body>
   <header>
     <h1>Sazinies ar mums</h1>
@@ -15,15 +15,33 @@
 
   <hr>
 
-  <main>
-    <section id="content">
-      <form>
-        <label for="Vārds">Vārds:</label>
-        <input text="text" id="Vārds" name="Vārds"><br><br>
-        <label for="e_pasts">E-pasts:</label>
-        <input text="e_pasts" id="e_pasts" name="e_pasts"><br><br>
-        <input type="submit" value="Iesniegt">
-      </form>
+<main class="lapassaturs2">
+  <div class="informacija">
+    <div class="kontaktinformacija">
+      <p><b>Kontaktinformācija</b></p>
+      <p>Telefona numurs: +37129238475</p>
+      <p>E-pasta adrese: info@manalapa.lv</p>
+      <p>Fiziskā adrese: Brīvības iela 1, Rīga, LV-1010, Latvija</p>
+    </div>
+    <div class="darba_laiks">
+      <p><b>Darba laiks</b></p>
+      <p>P. C. 7:30 - 16:30</p>
+      <p>Pk. 7:30 - 17:30</p>
+      <p>S. Sv. Slēgts</p>
+    </div>  
+    <div class="adrese">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17404.992325636224!2d24.1184671!3d56.9552423!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfce7462c8a7%3A0xb475e17804ade19f!2zQnLEq3bEq2JhcyBpZWxhIDEsIENlbnRyYSByYWpvbnMsIFLEq2dhLCBMVi0xMDEwLCBMYXR2aWph!5e0!3m2!1slv!2sse!4v1720457852852!5m2!1slv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>  
+  </div>
+  
+  <section id="saturs">
+    <form>
+      <label for="Vārds">Vārds:</label>
+      <input text="text" id="Vārds" name="Vārds"><br><br>
+      <label for="e_pasts">E-pasts:</label>
+      <input text="e_pasts" id="e_pasts" name="e_pasts"><br><br>
+      <input type="submit" value="Iesniegt">
+    </form>
 
     <br>
       
@@ -33,14 +51,11 @@
     </form>
       
     <br>
-      <a href="index.html">Atgriezties</a>
+  <a href="{{ url_for('index') }}" target="_top">Atgriezties</a>
     <br>  
     </section>
-  </main>
   <br>
-  <footer>
-    &copy; Mana firma
-  </footer>
+</main>
 
   <script src="script.js"></script>
 </body>
